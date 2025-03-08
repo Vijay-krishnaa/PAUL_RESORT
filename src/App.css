@@ -1,0 +1,204 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.navbar {
+  padding: 1rem 0;
+}
+
+.brand-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #003580;
+}
+
+.nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #003580 !important;
+}
+
+.btn-primary {
+  background-color: #003580;
+  border-color: #003580;
+}
+
+.btn-primary:hover {
+  background-color: #002560;
+  border-color: #002560;
+}
+
+.btn-outline-primary {
+  color: #003580;
+  border-color: #003580;
+}
+
+.btn-outline-primary:hover {
+  background-color: #003580;
+  border-color: #003580;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-top: -56px;
+}
+
+.hero-content {
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  color: #003580;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.room-card {
+  transition: transform 0.3s ease;
+  border: none;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.room-card:hover {
+  transform: translateY(-5px);
+}
+
+.room-image {
+  height: 250px;
+  object-fit: cover;
+}
+
+.room-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.room-features li {
+  padding: 0.3rem 0;
+  color: #666;
+}
+
+.room-features li:before {
+  content: "•";
+  color: #003580;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.room-price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #003580;
+}
+
+.amenity-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.amenity-card:hover {
+  transform: translateY(-5px);
+}
+
+.amenity-icon {
+  color: #003580;
+  margin-bottom: 1rem;
+}
+
+.amenity-card h3 {
+  color: #003580;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.amenity-card p {
+  color: #666;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.dining-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  height: 300px;
+}
+
+.dining-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dining-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: white;
+}
+
+.dining-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.room-carousel img {
+  border-radius: 8px;
+}
+
+.booking-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .room-image {
+    height: 200px;
+  }
+
+  .dining-card {
+    height: 250px;
+  }
+}
